@@ -1,0 +1,420 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- HERO SECTION -->
+ {% load static %}
+<section id="home" 
+    class="d-flex align-items-center justify-content-center text-center position-relative"
+    style="
+        min-height:100vh;
+        background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+                    url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+        background-size: cover;
+        background-position: center;
+        color:white;
+    ">
+
+    <div class="container">
+        <h1 class="display-2 fw-bold">Hi, I'm Vishal Kumar</h1>
+
+        <h4 class="text-info mt-2">Python Full Stack Developer</h4>
+
+        <p class="lead mt-4">
+            I build web applications using Python, Django, MySQL and modern technologies.
+        </p>
+
+        <div class="mt-3">
+            <span class="badge bg-light text-dark">Python</span>
+            <span class="badge bg-light text-dark">Django</span>
+            <span class="badge bg-light text-dark">HTML</span>
+            <span class="badge bg-light text-dark">CSS</span>
+            <span class="badge bg-light text-dark">JavaScript</span>
+            <span class="badge bg-light text-dark">Bootstrap</span>
+            <span class="badge bg-light text-dark">SQL</span>
+        </div>
+
+        <div class="mt-4">
+            <a href="#projects" class="btn btn-primary me-2">View Projects</a>
+            <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="d-flex align-items-center" style="min-height:100vh; background: linear-gradient(to right, #f8f9fa, #eef1f5);">
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-md-5 text-center mb-4">
+                <img src="{% static 'images/Vishal.jpg' %}" 
+                     alt="Vishal" 
+                     class="img-fluid rounded-circle shadow-lg border border-3 border-white" 
+                     style="max-width:260px;">
+            </div>
+
+            <!-- TEXT -->
+            <div class="col-md-7 text-center text-md-start">
+
+                <h2 class="fw-bold mb-2">About Me</h2>
+                <h5 class="text-primary mb-3">Python Full Stack Developer</h5>
+
+                <p class="text-muted">
+                    Hi, I'm <strong>Vishal Kumar</strong>, a passionate developer currently learning 
+                    <strong>Django</strong> and building real-world projects.
+                </p>
+
+                <p class="text-muted">
+                    I enjoy solving problems and developing web applications using modern technologies.
+                </p>
+
+                <!-- EDUCATION -->
+                <p class="mt-3">
+                    🎓 <strong>Education:</strong> BCA Student
+                </p>
+
+                <!-- CERTIFICATIONS -->
+                <p>
+                    📜 <strong>Certifications:</strong><br>
+                    • Python Full Stack - NareshIT<br>
+                    • Python Basic - HackerRank<br>
+                    • CSS Basic - HackerRank
+                </p>
+
+                <!-- LOCATION -->
+                <p>
+                    📍 <strong>Location:</strong> India
+                </p>
+
+                <!-- SKILLS -->
+                <div class="mt-3">
+                    <span class="badge bg-dark me-2 p-2">Python</span>
+                    <span class="badge bg-dark me-2 p-2">Django</span>
+                    <span class="badge bg-dark me-2 p-2">REST API</span>
+                    <span class="badge bg-dark me-2 p-2">HTML</span>
+                    <span class="badge bg-dark me-2 p-2">CSS</span>
+                    <span class="badge bg-dark me-2 p-2">JavaScript</span>
+                    <span class="badge bg-dark me-2 p-2">Bootstrap</span>
+                    <span class="badge bg-dark me-2 p-2">MySQL</span>
+                    <span class="badge bg-dark me-2 p-2">MongoDB</span>
+                </div>
+
+                <!-- BUTTONS -->
+                <div class="mt-4">
+                    <a href="#projects" class="btn btn-primary px-4 me-2 shadow">View Projects</a>
+                    <a href="#contact" class="btn btn-outline-dark px-4 shadow-sm">Contact Me</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="d-flex align-items-center" style="min-height:100vh; background:#f8f9fa;">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">My Skills</h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <p>Python <span class="float-end">80%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-success" style="width:80%"></div>
+                </div>
+
+                <p>Django <span class="float-end">75%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-info" style="width:75%"></div>
+                </div>
+
+                <p>JavaScript <span class="float-end">60%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-primary" style="width:60%"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <p>HTML <span class="float-end">85%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-warning" style="width:85%"></div>
+                </div>
+
+                <p>CSS <span class="float-end">75%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-danger" style="width:75%"></div>
+                </div>
+
+                <p>Bootstrap <span class="float-end">70%</span></p>
+                <div class="progress mb-4">
+                    <div class="progress-bar bg-dark" style="width:70%"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="d-flex align-items-center" 
+         style="min-height:100vh; background: linear-gradient(to right, #f8f9fa, #eef2f3);">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">My Projects</h2>
+            <p class="text-muted">Some of the projects I have built while learning full stack development</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 p-4 project-card text-center">
+
+                    <h5 class="fw-bold">Expense Tracker</h5>
+
+                    <p class="text-muted">
+                        A Django-based web app to track daily expenses with authentication,
+                        CRUD operations, and database integration.
+                    </p>
+
+                    <!-- Tech Stack -->
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Python</span>
+                        <span class="badge bg-success">Django</span>
+                        <span class="badge bg-secondary">MySQL</span>
+                        <span class="badge bg-dark">Bootstrap</span>
+                    </div>
+
+                    <!-- Status -->
+                    <p class="text-warning small">🚧 Currently Improving UI & Features</p>
+
+                    <div class="mt-auto">
+                        <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 p-4 project-card text-center">
+
+                    <h5 class="fw-bold">Job Portal System</h5>
+
+                    <p class="text-muted">
+                        A job portal platform with user & recruiter dashboards,
+                        job posting, and search functionality.
+                    </p>
+
+                    <div class="mb-3">
+                        <span class="badge bg-success">Django</span>
+                        <span class="badge bg-dark">Bootstrap</span>
+                        <span class="badge bg-info text-dark">JavaScript</span>
+                    </div>
+
+                    <p class="text-info small">📌 In Development</p>
+
+                    <div class="mt-auto">
+                        <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg h-100 p-4 project-card text-center">
+
+                    <h5 class="fw-bold">InstaTubeAI</h5>
+
+                    <p class="text-muted">
+                        A social media platform idea with AI-based features 
+                        for content and interaction (concept stage).
+                    </p>
+
+                    <div class="mb-3">
+                        <span class="badge bg-danger">AI</span>
+                        <span class="badge bg-primary">Django</span>
+                        <span class="badge bg-warning text-dark">React (Planned)</span>
+                    </div>
+
+                    <p class="text-secondary small">💡 Concept Project</p>
+
+                    <div class="mt-auto">
+                        <a href="#" class="btn btn-outline-dark btn-sm">GitHub</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- View More -->
+        <div class="text-center mt-5">
+            <a href="/projects" class="btn btn-dark px-4 py-2 shadow">
+                View All Projects →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- RESUME -->
+{% load static %}
+
+<section id="resume" class="d-flex align-items-center" 
+         style="min-height:100vh; background: linear-gradient(to right, #eef2f3, #dfe9f3);">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE (TEXT) -->
+            <div class="col-md-6 text-center text-md-start mb-4">
+
+                <h2 class="fw-bold">My Resume</h2>
+
+                <p class="mt-3">
+                    Want to know more about my skills, projects, and experience?
+                    Download my resume and explore my journey as a 
+                    <strong>Python Full Stack Developer</strong>.
+                </p>
+
+                <ul class="mt-3">
+                    <li>✔ Python & Django Projects</li>
+                    <li>✔ Frontend + Backend Skills</li>
+                    <li>✔ Certifications (NareshIT, HackerRank)</li>
+                </ul>
+
+                <!-- Buttons -->
+                <div class="mt-4">
+                    <a href="{% static 'resume/Vishal_Resume.pdf' %}" 
+                       class="btn btn-primary px-4 me-2 shadow" download>
+                        ⬇ Download Resume
+                    </a>
+
+                    <a href="{% static 'resume/Vishal_Resume.pdf' %}" 
+                       target="_blank"
+                       class="btn btn-outline-dark px-4">
+                        👁 View Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE (PREVIEW CARD) -->
+            <div class="col-md-6 text-center">
+
+                <div class="card shadow-lg p-3 border-0">
+                    <p class="text-muted small">Preview of my resume</p>
+                    <img src="{% static 'images/resume-preview.png' %}" 
+                         class="img-fluid rounded"
+                         alt="Resume Preview">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="d-flex align-items-center position-relative"
+         style="min-height:100vh; background:#f4f7fb;">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <div class="row shadow-lg rounded-4 overflow-hidden bg-white">
+
+                    <!-- LEFT PANEL -->
+                    <div class="col-md-5 p-5 text-white"
+                         style="background: linear-gradient(135deg, #192741, #2a5298);">
+
+                        <h2 class="fw-bold mb-4">Get In Touch</h2>
+
+                        <p class="mb-4">
+                            I'm open to freelance work, collaborations, or any exciting opportunity.
+                        </p>
+
+                        <!-- INFO -->
+                        <div class="mb-3">
+                            <p class="mb-2">
+                                <i class="bi bi-envelope-fill me-2"></i>
+                                vishalkumarmth091@gmail.com
+                            </p>
+
+                            <p>
+                                <i class="bi bi-telephone-fill me-2"></i>
+                                9709851977
+                            </p>
+                        </div>
+
+                        <hr class="border-light">
+
+                        <!-- SOCIAL ICONS -->
+                        <div class="mt-4 d-flex gap-3">
+                            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT PANEL -->
+                    <div class="col-md-7 p-5">
+
+                        <h4 class="fw-bold mb-4">Send a Message</h4>
+
+                        <form>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control custom-input" placeholder="Your Name">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control custom-input" placeholder="Your Email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea class="form-control custom-input" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark w-100 rounded-3 fw-semibold">
+                                Send Message →
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock content %}
